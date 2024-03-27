@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contactstyle.css">
+</head>
+<body>
+    
+
+   
+    <header id="header" class="fixed-top aligned-items-centre header-scrolled">
+
+        <!---Navigation bar-->
+        
+        <img src="assets/black_logo.png" alt="PIXEL ZONE" id="logo">
+        <nav id="nav" class="fixed-top">
+            <div class="first" >
+                <p class="nav-content"> 
+                    <a href="index.html"> HOME </a> <br>  
+                    <a href="about.html">ABOUT</a>  <br>
+                    <a href="services.html">SERVICES</a> <br>
+                    <a href="contact.html" class="active">CONTACT</a> </p> <br>   
+            </div>
+        </nav>
+        <!--header ending-->
+
+        
+    </header> 
+    
+        
+    <main> 
+             <h4><u>LET'S GET CONNECT !!</u></h4>
+        <form action="get.php" target="_blank">
+            <label for="Firstname">First Name:</label><br>
+            <input type="text" name="FName" placeholder="Enter your first name" id="name" required> <br> <br>
+            <label for="Lastname">Last Name:</label><br>
+            <input type="text" name="LName" placeholder="Enter your last name" id="name" required> <br> <br>
+            <label for="contact">Contact no.:</label> <br>
+            <input type="tel" pattern="{0,9}"  name="phone" placeholder="Enter your number" id="phone" required><br> <br>
+            <label for="email">Email: </label> <br>
+            <input type="email" name="email" placeholder="Enter your email" id="email" required><br> <br>
+            <label for="Message">Message</label> <br>
+            <input name="Message" id="Message" cols="30" rows="10" placeholder="Write here..." required></input> <br><br>
+            <br>
+            <button type="submit" class="button">Submit</button>
+            <button type="reset" class="button">Reset</button>
+            <br>
+        </form>
+        
+             <h2 class="social-text">
+            <u>Other Contact Links :-</u>
+       </h2> 
+        <div class="social-media">
+            <div class="socialLogo">
+                <a href="https://www.instagram.com/deo_prakash_/"><img src="assets/insta.png" alt="instagram" class="img1"></a>
+            </div>
+            <div class="socialLogo">
+                 <a href="https://www.linkedin.com/in/deo-prakash-152265225"> <img src="assets/linkedin.png" alt="linkedin" class="img2"> </a>
+            </div>
+           <div class="socialLogo">
+                <a href="https://www.x.com/DeoPrak5253"><img src="assets/x.png" alt="x"></a>
+           </div>
+        
+    </main>
+
+    <footer>
+        <div id="bottom">
+            <br><br><p class="bottom-text">Copyright 2024, @PIXEL ZONE  | DEO PRAKASH</p>
+        </div>
+        <button class="feedback" onclick="myform()">FEEDBACK</button>  
+    </footer>
+    
+
+</body>
+</html>

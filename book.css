@@ -1,0 +1,158 @@
+body{
+    background-color: white;
+}
+
+
+header{
+    display: block;
+    white-space: nowrap;
+    box-shadow: 10px, 10px;
+    background-color: white;
+}
+
+#header.header-scrolled{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1030;
+}
+#header{
+    height: 90px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+}
+
+#logo{
+    height: 80px; 
+    width: 70px; 
+    box-shadow: none;
+    padding-left: 40px;
+    padding-top: 7px;
+}
+
+.nav-content{
+    text-indent: 30px;
+    display: flex;
+    padding-left: 840px;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+a{ 
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-decoration: none;
+} 
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+@keyframes fadeInAndSlide {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+.head-animate {
+    animation: fadeInAndSlide 1s ease-in-out forwards;
+}
+
+
+h2{
+    color: black;
+    margin-top: 100px;
+    font-size: 70px;
+    margin-bottom: -110px;
+    text-align: center;
+    margin-left: 35px;
+}
+
+.gallery{
+    display: inline-flex;
+    margin-bottom: 50px;
+}
+.book-container{
+    margin-top: 200px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+img{
+    height: 300px;
+    width: auto;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+#b9{
+    width: 200px;
+}
+
+#b4, #b7{
+    width: 210px;
+}
+
+.book:hover img{
+    transform: scale(1.2);
+    transition: transform 0.3s;
+    box-shadow: 3px 3px 5px 5px rgba(11, 2, 2, 0.614);
+}
+
+.bottom-text{
+    color: rgb(2, 0, 0);
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+
+.feedback{
+    border:none;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    background-color:rgb(54, 253, 5);
+    color: #000000;
+
+    position: fixed;
+    top: 510px;
+    left: 1110px;
+    right: 200px;
+    z-index: 1030;
+    font-weight: bold;
+}
+.feedback:hover{
+    background-color: #57fff7;
+    border-color: cadetblue;
+}
+.feedback{
+    animation: scrollDownAnimation .5s ease infinite alternate;
+    animation-duration: 0.5s;
+    animation-timing-function: inherit;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: scrollDownAnimation;
+    animation-timeline: auto;
+}
+@keyframes scrollDownAnimation{
+    from{transform:translateY(0);}
+    to{transform:translateY(-5px);}
+}

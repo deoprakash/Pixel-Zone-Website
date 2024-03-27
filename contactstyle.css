@@ -1,0 +1,217 @@
+body{
+    background-image: url('assets/building.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    border: 4px double white;
+    background-attachment: fixed;
+}
+
+main{
+    background-color: #04043b;
+    opacity: 0.7;
+    margin-left: -32px;
+    margin-right: -11px;
+    margin-top: -80px;
+    margin-bottom: -10px;
+
+}
+
+
+
+header{
+    display: block;
+    white-space: nowrap;
+    box-shadow: 10px, 10px;
+    
+}
+#header.header-scrolled{
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.fixed-top{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1030;
+}
+#header{
+    height: 90px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+   
+}
+
+
+#logo{
+    height: 80px; 
+    width: 70px; 
+    box-shadow: none;
+    padding-left: 40px;
+    padding-top: 7px;
+}
+
+h4{
+    padding-top: 180px;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+
+
+
+
+.nav-content{
+    color: tomato;
+    text-indent: 30px;
+    display: flex;
+    padding-left: 840px;
+    font-size: 17px;
+    font-weight: lighter;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+a{ 
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    text-decoration: none;
+} 
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a.active{
+    color: aqua;
+}
+
+
+form{
+    margin-left: 300px;
+    margin-right: 300px;
+    
+}
+
+
+
+
+label {
+    color: white;
+}
+
+
+input{
+    background-color:#04043b;
+    border-style: none;
+    border-bottom-style:solid;
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-width: 100%;
+    width: 100%;
+}
+
+
+button{
+    background-color: aqua;
+    border-radius: 30px;
+    width: 380px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding-top: -20px;
+    
+}
+
+button:hover{
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media{
+    display: inline-flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+    padding-left: 26.3rem;
+}
+
+.social-text{
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: -100px;
+    margin-bottom: -60px;
+}
+
+img{
+    height: 40px;
+    width: auto;
+    justify-content: space-evenly;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.socialLogo:hover img{
+    transform: scale(1.3); /* Enlarge to 120% of original size on hover */
+        transition: transform 0.3s
+}
+
+.bottom-text{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+
+footer{
+    background-color: #04043b;
+    opacity: 0.7;
+    height: 10rem;
+    width: auto;
+    margin: 10px -11.3px -2px;
+    margin-bottom: -10.5px;
+}
+
+
+.feedback{
+    border:none;
+    border-radius: 20px;
+    height: 40px;
+    width: 130px;
+    background-color:rgb(54, 253, 5);
+    color: #000000;
+
+    position: fixed;
+    top: 510px;
+    left: 1110px;
+    right: 200px;
+    z-index: 1030;
+    font-weight: bold;
+}
+.feedback:hover{
+    background-color: #57fff7;
+    border-color: cadetblue;
+}
+.feedback{
+    animation: scrollDownAnimation .5s ease infinite alternate;
+    animation-duration: 0.5s;
+    animation-timing-function: inherit;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: scrollDownAnimation;
+    animation-timeline: auto;
+}
+@keyframes scrollDownAnimation{
+    from{transform:translateY(0);}
+    to{transform:translateY(-5px);}
+}
